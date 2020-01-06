@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="Style.css">
+    <!-- End CSS -->
+    <!-- meta elements -->
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="some description">
+    <meta name="keywords" content="Država, E-mail, Kontakt, ...">
+
+    <meta name="author" content="zuna20@gmail.com">
+    <!-- favicon meta -->
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+    <!-- end favicon meta -->
+    <!-- end meta elements -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    
+    <!-- End Google Fonts -->
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="web-h1">Računalni sustavi</h1>
+        <div class="hero-image" style="height: 350px;"></div>
+
+        <nav>
+            <ul>
+                <li><a href="Web.html">Naslovna</a></li>
+                <li><a href="News.html">Novosti</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="about-us.html">O nama</a></li>
+                <li><a href="gallery.html">Galerija</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+                <a href="#home" class="active"></a>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <a href="Web.html">Naslovna</a>
+                    <a href="News.html">Novosti</a>
+                    <a href="contact.html">Kontakt</a>
+                    <a href="about-us.html">O nama</a>
+                    <a href="gallery.html">Galerija</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <script>
+                /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+                function myFunction() {
+                    var x = document.getElementById("myLinks");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
+                }
+            </script>
+        </div>
+    </header>
+    <main>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2783.368241488839!2d15.992157500000012!3d45.763809900000034!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d5e58aee12d5%3A0x55f9aaade424a33a!2sHribarov%20prilaz%203%2C%2010000%2C%20Zagreb!5e0!3m2!1shr!2shr!4v1575654727123!5m2!1shr!2shr"
+                width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <form action="http://work2.eburza.hr/pwa/responzive-page/send-contact.php" id="contact_form" name="contact_form" method="POST">
+                <div class="container1">
+                    <label for="fname">Ime ili naziv *</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Ime ili naziv tvrtke *" required>
+
+                    <label for="lname">E-mail *</label>
+                    <input type="email" id="email" name="email" placeholder="E-mail " required>
+                    
+                    <label for="lname">Kontakt broj *</label>
+                    <input type="tel" id="tel" name="tel" placeholder="Kontakt" required>
+
+                    <label for="country">Država</label>
+                    <select id="country" name="Država">
+                        <option value="" selected >Odaberite</option>
+                        <option value="BE">Belgija</option>
+                        <option value="HR">Hrvatska</option>
+                        <option value="LU">Francuska</option>
+                        <option value="HU">Španjolska</option>
+                    </select>
+
+                    <label for="subject">Sadržaj</label>
+                    <textarea id="subject" name="subject" placeholder="Napišite nešto..." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+            </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            Social media<br>
+
+            <a href="https://www.linkedin.com/in/tim-berners-lee-b41808ab/ " target="_blank "><img src="Images/ln.png " alt="Linkedin " title="Linkedin " style="width:24px; margin-top:0.4em "></a>
+
+            <a href="https://twitter.com/ " target="_blank "><img src="Images/tw.png " alt="Twitter " title="Twitter " style="width:24px; margin-top:0.4em "></a>
+
+            <a href="https://plus.google.com/113372414904624897851 " target="_blank "><img src="Images/g+.png " alt="Google+ " title="Google+ " style="width:24px; margin-top:0.4em "></a>
+
+        </p>
+       <p>Copyright &copy; 2019 Marin Žunić. <a href="https://github.com/Mzunic?tab=repositories"><img src="Images/github.png" title="Github" alt="Github"></a> </p>
+    </footer>
+</body>
+
+</html>

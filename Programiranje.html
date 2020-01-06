@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="Style.css">
+    <!-- End CSS -->
+    <!-- meta elements -->
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="some description">
+    <meta name="keywords" content="MySQL, baza, CREATE, google, ...">
+
+    <meta name="author" content="zuna20@gmail.com">
+    <!-- favicon meta -->
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+    <!-- end favicon meta -->
+    <!-- end meta elements -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <!-- End Google Fonts -->
+    <title>Računalni sustavi</title>
+</head>
+
+<body class="news-font">
+    <header>
+        <h1 class="web-h1">Računalni sustavi</h1>
+        <div class="hero-image"></div>
+        <nav>
+            <ul>
+                <li><a href="Web.html">Naslovna</a></li>
+                <li><a href="News.html">Novosti</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="about-us.html">O nama</a></li>
+                <li><a href="gallery.html">Galerija</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+                <a href="#home" class="active"></a>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <a href="Web.html">Naslovna</a>
+                    <a href="News.html">Novosti</a>
+                    <a href="contact.html">Kontakt</a>
+                    <a href="about-us.html">O nama</a>
+                    <a href="gallery.html">Galerija</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <script>
+                /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+                function myFunction() {
+                    var x = document.getElementById("myLinks");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
+                }
+            </script>
+        </div>
+
+    </header>
+    <div class="container">
+        <h2> Što je MySQL?</h2>
+        <p>Jednostavno rečeno, to je jedna od najpopularnijih open-source baza podataka na svijetu. To je najčešće rješenje za male tvrtke i velike tvrtke.</p>
+        <p>Nije bitno ako ste umjetnik koji želi pratiti inventar svojeg posla ili ste inženjer koji radi za Google ili Facebook, MySQL će biti vam svejedno poslužiti.</p>
+        <p> Vrlo je moćna i široka platforma, ali nemojte dopustiti da vas to uplaši. Vrlo ju je jednostavno instalirati i njome upravljati, kao što ćete vidjeti u nastavku. Kreirajte svoju MySQL bazu podataka.</p>
+        </p>
+
+        <h2>Prvi korak</h2>
+        <p> Pretpostavimo da ste instalirali MySQL i spremni ste za stvaranje MySQL baze podataka. Imajte na umu da ipak trebate imate malo naprednijeg znanja u radu s računalima i programima. U MySQL-u sve naredbe moraju biti unesene putem naredbenog retka
+            (command prompt) jer nema vizualnog sučelja. </p>
+        <p>Kada pokrenete program, otvorit će se MySQL prozor. Primijetit ćete naredbeni redak. U njega ćete morati unijeti naredbu CREATE DATABASE ;. Zamijenite nazivom vaše baze podataka. Imajte na umu da ne može sadržavati razmake. Također, sve naredbe
+            moraju biti unesene s točkom zarezom (;).</p>
+
+        <h2>Drugi i treći korak</h2>
+        <p> Možda ćete morati prikazati svoju bazu podataka. Unesite naredbu SHOW DATABASES; i vidjet ćete sve dostupne baze podataka.</p>
+        <p> Uvijek će postojati 2 baze podataka - mysql i test. Trenutno vam one neće biti potrebne. Vidjet ćete novo stvorenu bazu podataka na ovom popisu. Recimo da su to german_car_manufacturers. Morate ga odabrati. Unesite naredbu USE german_car_manufacturers;
+            MySQL će vas obavijestiti da je to vaša aktivna baza podataka</p>
+        <h2>Četvrti korak</h2>
+        <p>Izradite tablicu. Tablica je glavni dio priče, stoga je bitno da ovdje sve razumijete. Morate znati značenje svih važnih dijelova naredbe.</p>
+        <p> Za izradu tablice trebate unijeti sljedeću naredbu: CREATE TABLE proizvođači (ID INT NEMO PRIMARNI KEY AUTO_INCREMENT, proizvođač CHAR (20), proizvodnja INT (10)) ;. INT naredba će osigurati da ID polje će sadržavati samo brojeve, a NE NULL će
+            osigurati da ne može ostati prazan. PRIMARY KEY postavlja ID polje kao ključno polje u tablici.</p>
+        <p>Naredba AUTO_INCREMENT automatski dodjeljuje povećane vrijednosti u id polju, u osnovi automatski zapisujući svaki unos. Naredbe CHAR i INT predstavljaju vrste podataka dopuštenih u poljima. Broj pored naredbi pokazuje koliko znakova ili cijeli
+            brojevi mogu stati u svakom polju.</p>
+
+        <h2>Peti i šesti korak</h2>
+        <p>Kako napraviti prvi unos i kasnije više unosa? Sada moramo unijeti neke podatke u našu tablicu. Jednostavno unesite naredbu INSERT INTO proizvođača (ID, proizvođač, proizvodnja) VALUES (NULL, 'Audi', '225000') ;. Ova naredba kaže programu da unese
+            naziv proizvođača, u ovom slučaju Audi i broj proizvedenih automobila.</p>
+        <p>Budući da polje id sadrži naredbu NOT NULL, unos NULL kao vrijednost će ga prisiliti da ga automatski povećava na 1, zbog naredbe AUTO_INCREMENT. Ako želite stvoriti više unosa u svoju bazu podataka, stavite sljedeću naredbu INSERT INTO proizvođača
+            (ID, proizvođač, proizvodnja) VALUES (NULL, 'Opel', '321459'), (NULL, 'Volkswagen', '254879' , (NULL, 'Porsche', '124547') ;. Tako ćete u osnovi završiti glavni dio posla u kreiranju MySQL baze. Zadnji korak Upravljajte svojom MySQL bazom
+            podataka.
+        </p>
+        <p>Ako trebate određene podatke ili određene rezultate iz vaše baze podataka, trebate naučiti više naredbi. Najprije morate odabrati sve podatke u bazi podataka. To je učinjeno pomoću naredbe SELECT * FROM proizvođača. Imajte na umu da * naredba
+            znači "sve".</p>
+        <p>Ako vam je potrebna neka druga vrsta podataka, unesite sljedeću naredbu: SELECT proizvođača, proizvodnja od proizvođača NARUDŽBA po proizvodnji ;. Sada će vaš stol biti skaliran brojevima proizvodnje, a ne originalnim unosom.</p>
+        <p>Ako želite navesti svoju proizvodnju obrnutim redoslijedom, unesite naredbu: SELECT proizvođača, proizvodnja FROM proizvođača NARUDŽBA proizvodnja DESC ;. Naredba DESC popisat će ih silaznim redoslijedom.</p>
+
+        <h2>Zaključak</h2>
+        <p>MySQL baza podataka je vrlo poznat i koristan program za izradu baza podataka. Mnogi ga koriste, od malih do velikih tvrtki. Iako se za neke čini zastrašujuće, s malo znanja, vrlo je lako naučiti kako kreirati vlastitu MySQL bazu podataka.
+        </p>
+        <p>Zapamtite da MySQL nema vizualno sučelje i sve naredbe moraju biti unesene putem naredbenog retka. Također, zapamtite da trebate koristiti točku sa zarezom (;) nakon svake naredbe. Inače, će MySQL prijaviti pogrešku.</p>
+        <p>Nakon što naučite osnovne naredbe, spremni ste za izradu MySQL baze podataka.</p>
+    </div>
+    <footer>
+        <p>Social media<br>
+
+            <a href="https://www.linkedin.com/in/tim-berners-lee-b41808ab/" target="_blank"><img src="Images/ln.png" alt="Linkedin" title="Linkedin" style="width:24px; margin-top:0.4em"></a>
+
+            <a href="https://twitter.com/" target="_blank"><img src="Images/tw.png" alt="Twitter" title="Twitter" style="width:24px; margin-top:0.4em"></a>
+
+            <a href="https://plus.google.com/113372414904624897851" target="_blank"><img src="Images/g+.png" alt="Google+" title="Google+" style="width:24px; margin-top:0.4em"></a>
+
+        </p>
+        <p>Copyright &copy; 2019 Marin Žunić. <a href="https://github.com/Mzunic?tab=repositories"><img src="Images/github.png" title="Github" alt="Github"></a> </p>
+    </footer>
+</body>
+
+</html>

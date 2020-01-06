@@ -1,0 +1,495 @@
+﻿body,
+html {
+    font-family: Arial;
+    margin: 0;
+    font-size: 16px;
+}
+
+ :root {
+    --mainColor: black;
+}
+
+header {
+    font-family: candara;
+    display: block;
+    width: 100%;
+}
+
+.hero-image {
+    background-image: url("Images/slider1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 500px;
+}
+
+ul {
+    font-family: arial;
+    list-style-type: none;
+    margin: 0px;
+    overflow: hidden;
+    background-color: rgb(204, 204, 206);
+    text-align: center;
+    border-bottom: 1px solid #e1e1e1;
+    height: 50px;
+    padding-top: 30px;
+    padding-left: 0px;
+}
+
+li {
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+li a {
+    color: var(--mainColor);
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: auto;
+}
+
+li a:hover {
+    cursor: pointer;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--mainColor);
+}
+
+.web-h1 {
+    padding: 10px;
+    margin: 0px;
+    font-size: 24px;
+    text-align: center;
+    background-color: rgb(234, 234, 236);
+}
+ h1{
+ 	 margin-left:15px;
+ }    
+h2 {
+    font-size: 24px;
+    color: #27318b;
+    margin-left: 15px;
+}
+
+h3 {
+    margin-left: 15px;
+}
+
+main a {
+    color: #27318b;
+    text-decoration: none;
+}
+
+main a:hover {
+    color: #8b3727;
+    text-decoration: underline;
+}
+
+p {
+    margin: 16px;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+
+.container {
+    margin: 30px auto 0;
+    width: 80%;
+}
+
+.container2 {
+    margin: 30px auto 0;
+    width: 60%;
+}
+
+.container1 {
+    margin: 30px 35% ;
+    display: block;
+    width: 65%;
+}
+
+.slikacontainer {
+    margin-left: 5%;
+}
+
+figure {
+    float: left;
+    margin-top: 30px;
+    width: 30%;
+    margin: 1%;
+}
+
+.clear {
+    clear: both;
+}
+
+figcaption {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.FigNaslov {
+    text-align: center;
+    color: black;
+}
+
+.PodNaslov {
+    font-size: 14px;
+    text-align: center;
+    color: #33adff;
+}
+
+img {
+    width: 100%;
+    margin: auto;
+}
+
+label {
+    display: block;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=tel],
+select,
+textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-family: 'pt_sansregular', Arial, Sans-Serif;
+    font-size:95%;
+}
+
+input[type=submit] {
+    display: block;
+    background-color: #0061a6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30%;
+}
+
+input[type=submit]:hover {
+    background-color: #33adff;
+}
+
+footer {
+    background-color: #333;
+    padding: 5px;
+    clear: both;
+    margin-top: 30px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    margin: 8px;
+}
+footer img {
+	width: 20px;
+}
+.news1 {
+    height: 50%;
+    width: 15%;
+    padding-top:15px;
+    float: left;
+}
+
+.news1-text {
+    margin-left: 18%;
+    margin-top: -20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.news-h1 {
+    padding-top: 10px;
+    padding-bottom: 70px;
+    margin: 0px;
+    font-size: 24px;
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+}
+
+.news-font {
+    font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+span {
+    color: grey;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.news-back{
+    color:#27318b;
+    padding-left:15px;
+    font-weight: bold;
+}
+.news-back:hover{
+    color:#8b3727;
+}
+
+.news2-slika {
+    width: 700px;
+    height: 450px;
+    margin-left: 15px;
+}
+.news-vise:hover{
+	color:#8b3727;
+}
+
+.div-galerija {
+    width: 30%;
+    padding: 10px;
+    float: left;
+}
+
+.image-galerija {
+    height: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.video{
+		margin-left: 15px;
+		float:left;
+		padding-right:15px;
+	}           
+#myImg:hover {
+    opacity: 0.7s;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+/* Style the navigation menu */
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+.topnav #myLinks {
+    display: none;
+}
+
+
+/* Style navigation menu links */
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+
+/* Style the hamburger menu */
+
+.topnav a.icon {
+    background: #333;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+/* Add a grey background color on mouse-over */
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Style the active link (or home/logo) */
+
+.active {
+    background-color: rgb(204, 204, 206);
+    color: white;
+    height: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+    .news1-text {
+        margin-left: 25%;
+        margin-top: -10px;
+    }
+    body {
+        font-size: 15px;
+    }
+    .news1 {
+        padding-top: 30px;
+        width: 200px;
+        float: left;
+    }
+    .div-galerija {
+        width: 32%;
+        padding: 5px;
+        float: left;
+    }
+    .image-galerija {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    figure {
+        width: 100%;
+        margin-left: -5px;
+        margin-top: 5px;
+    }
+    li {
+        text-align: center;
+        display: inline;
+    }
+    .container2 {
+        width: 90%;
+    }
+    body {
+        font-size: 14px;
+    }
+    .news1 {
+        height: 300px;
+        width: 70%;
+        float: none;
+        margin: 0 auto;
+    }
+    .news-h2 {
+        text-align: center;
+    }
+    .news1-text {
+        padding-top: 10px;
+        margin: 0;
+    }
+    li a {
+        color: var(--mainColor);
+        text-decoration: none;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        margin: auto;
+    }
+    li a:hover {
+        color: transparent;
+        -webkit-text-stroke: 1px var(--mainColor);
+    }
+    .div-galerija {
+        width: 100%;
+        padding: 10px;
+        float: left;
+        margin: 0 auto;
+    }
+    .image-galerija {
+        height: 450px;
+    }
+    .hamburger {
+        display: inline;
+    }
+    nav {
+        display: none;
+    }
+	.video{
+		float:none;
+		box-align:center;
+		padding-right:0px;
+		padding-left:50px;
+	}
+	h1{
+		padding-top: 10px;
+		padding-bottom:15px;
+        text-align: center;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 450px) {
+    .news1 {
+        height: 250px;
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+    }
+    .news1-text {
+        padding-top: 10px;
+        margin: 0;
+    }
+    .news-h2 {
+        text-align: center;
+    }
+    .video{
+		float:none;
+		box-align:center;
+		padding-right:0px;
+        padding-left:0px;
+        width:90%;
+    }
+    .div-galerija {
+        width: 100%;
+        padding: 0px;
+        float: left;
+        margin: 0 auto;
+    }
+    .image-galerija {
+        height: 300px;
+    }
+    form {
+        width: 100%;
+        margin: auto 0;
+        text-align:center;
+    }
+    input[type=text],
+    input[type=email],
+    input[type=number],
+    input[type=tel],
+    select,
+    textarea {
+        width: 70%;
+    }   
+
+    input[type=submit] {
+        width: 70%;
+        margin-left:15%;
+        
+}    
+.container1 {
+    margin:5% 0%;
+    width:100%;
+    
+}
+    .news2-slika {
+        width: 310px;
+        height: 300px;
+        margin-left: 15px;
+}
+.hero-image {
+    background-image: url("Images/slider2.jpg");
+    height:350px;
+}
+}
